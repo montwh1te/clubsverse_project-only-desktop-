@@ -1,0 +1,1423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+::-webkit-scrollbar-track{
+  background-color: white;
+}
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background:#133413;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #102b10 ;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  box-shadow: -8px -3px 10px 0px rgb(0 0 0 / 69%);
+  padding: 0px 10%;
+  z-index: 1000;
+}
+
+header .navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+  text-transform: capitalize;
+}
+.item1{
+      left: 48%;
+      transition: 0.4s;
+}
+
+header .navbar ul li a {
+  font-size: 1.075vw;
+  padding: 2vh;
+  color: #ffffff;
+  display: block;
+}
+
+header .navbar ul li a:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  width: 200px;
+  background: #ffff;
+  display: none;
+}
+
+
+
+
+#logo {
+  background: transparent;
+  position: fixed;
+  z-index: 1000;
+  left: 1%;
+  width: 3.5%;
+  top: 0.4%;
+}
+#logo_principal {
+  width: 96%;
+  z-index: 1;
+}
+
+
+
+#seta_esquerda{
+  position: absolute;
+  z-index: 4;
+  top: 30%;
+  left: 20%;
+  width: 50%;
+  cursor: pointer;
+}
+#seta_direita{
+  position: absolute;
+  z-index: 4;
+  top: 30%;
+  left: 25%;
+  width: 50%;
+  cursor: pointer;
+}
+#bola_branca1 {
+  z-index: 4;
+  position: absolute;
+  width: 3%;
+  height: 6%;
+  left: 88%;
+  top: 42%;
+  border-radius: 100%;
+  background: #ffffff13;
+  cursor: pointer;
+}
+#bola_branca2 {
+  z-index: 4;
+  position: absolute;
+  width: 3%;
+  height: 6%;
+  left: 92%;
+  top: 42%;
+  border-radius: 100%;
+  background: #ffffff13;
+  cursor: pointer;
+}
+
+
+#bola_branca1:hover{
+  background: #ffffff32;
+}
+#bola_branca2:hover{
+  background: #ffffff32;
+}
+
+
+#time_restinga:checked ~ #campo2{
+  z-index: 3;
+  top: 0;
+}
+#time_restinga:checked ~ #logo_time1{
+  z-index: 3;
+}
+
+
+
+
+#time_verme:checked ~ #campo{
+  top: 0;
+  z-index: 3;
+}
+
+#time_verme:checked ~ #logo_time{
+  z-index: 3;
+}
+
+
+
+
+
+
+#time_verme{
+  display: none;
+}
+#time_restinga{
+  display: none;
+}
+
+
+#estatisticas_jog{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+#estatisticas_jog2{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+#estatisticas_jog3{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+#estatisticas_jog4{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+#estatisticas_jog5{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+#estatisticas_jog6{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+#estatisticas_jog7{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+#estatisticas_jog8{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+#estatisticas_jog9{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+#estatisticas_jog10{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+#estatisticas_jog11{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  display: none;
+}
+
+
+#champions{
+  z-index: 1;
+  position: absolute;
+}
+
+
+
+
+#campo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 7%;
+  top: -20%;
+  z-index: 0;
+}
+#campo2{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 7%;
+  top: 20%;
+  z-index: 0;
+}
+
+
+
+
+
+#parte_de_cima{
+  background: #333;
+  width: 100%;
+  height: 100vh;
+}
+#imagem_campo{
+  position: absolute;
+  top: 9%;
+  left: 3.1%;
+  width: 80%;
+  z-index: 1;
+}
+#logo_time{
+  width: 10%;
+  position: absolute;
+  left: 86.5%;
+  top: 13%;
+  z-index: 0;
+}
+#logo_time1{
+  width: 14%;
+  position: absolute;
+  left: 84.5%;
+  top: 10%;
+  z-index: 0;
+}
+
+
+
+
+
+
+
+#esquemas{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas2{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas3{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas4{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas5{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas6{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas7{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas8{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas9{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas10{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas11{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+
+
+
+#esquemas_1{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas2_2{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas3_3{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas4_4{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas5_5{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas6_6{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas7_7{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas8_8{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas9_9{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas10_10{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+#esquemas11_11{
+  width: 15%;
+  background: transparent;
+  height: 50vh;
+  position: absolute;
+  top: 48%;
+  left: 82%;
+}
+
+
+
+
+#esquemas_titulo{
+  width: 15%;
+  background: transparent;
+  height: 20vh;
+  position: absolute;
+  top: 41%;
+  left: 81.5%;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+
+
+#carta1{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta2{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta3{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta4{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta5{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta6{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta7{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta8{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta9{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta10{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta11{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+
+
+
+
+#carta1_1{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta2_2{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta3_3{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta4_4{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta5_5{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta6_6{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta7_7{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta8_8{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta9_9{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta10_10{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+#carta11_11{
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 8%;
+  left:120%;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+
+
+
+
+.carta_pro_1{
+  position: absolute;
+  width: 100%;
+  right: -14%;
+}
+.jogador {
+  position: absolute;
+  width: 46%;
+  top: 17%;
+  left: 47%;
+}
+.numero {
+  color: #fff;
+  position: absolute;
+  top: 13%;
+  left: 36.3%;
+  font-size: 1.8vw;
+}
+.posicao {
+  color: #fff;
+  position: absolute;
+  top: 21.5%;
+  left: 39%;
+  font-size: 0.8vw;
+}
+.bandeira {
+  width: 10%;
+  position: absolute;
+  top: 27.5%;
+  left: 38%;
+}
+.logo_carta {
+  position: absolute;
+  width: 12%;
+  top: 35%;
+  left: 37%;
+}
+.nome_carta {
+  color: #fff;
+  font-size: 1.2778vw;
+  top: 45%;
+  position: absolute;
+  left: 51%;
+}
+.passe {
+  color: #fff;
+  position: absolute;
+  top: 53%;
+  left: 47%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.passe_numero {
+  color: #fff;
+  position: absolute;
+  top: 53%;
+  left: 37%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.shute {
+  color: #fff;
+  position: absolute;
+  top: 58%;
+  left: 47%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.shute_numero {
+  color: #fff;
+  position: absolute;
+  top: 58%;
+  left: 37%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.pas {
+  color: #fff;
+  position: absolute;
+  top: 63%;
+  left: 47%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.pas_numero {
+  color: #fff;
+  position: absolute;
+  top: 63%;
+  left: 37%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.drible {
+  color: #fff;
+  position: absolute;
+  top: 53%;
+  left: 80%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.drible_numero {
+  color: #fff;
+  position: absolute;
+  top: 53%;
+  left: 70%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.defesa {
+  color: #fff;
+  position: absolute;
+  top: 58%;
+  left: 80%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.defesa_numero {
+  color: #fff;
+  position: absolute;
+  top: 58%;
+  left: 70%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.fisico {
+  color: #fff;
+  position: absolute;
+  top: 63%;
+  left: 80%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+.fisico_numero {
+  color: #fff;
+  position: absolute;
+  top: 63%;
+  left: 70%;
+  font-weight: lighter;
+  font-size: 1.1em;
+}
+
+
+
+#camisa2_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 15%;
+  left: 37%;
+  z-index: 0;
+}
+
+
+
+
+#camisa1_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 15%;
+  left: 37%;
+  z-index: 1000000;
+}
+.camisa1{
+  position: absolute;
+  width: 57%;
+  cursor: pointer;
+  transition: 0.4s;
+  top: 7%;
+  left: 20%;
+}
+.camisa1_goleiro{
+  position: absolute;
+  width: 57%;
+  cursor: pointer;
+  transition: 0.4s;
+  top: 0%;
+  left: 20%;
+}
+
+
+
+.camisa1_goleiro:hover + .nome1{
+  color: #000000;
+}
+.camisa1_goleiro:hover ~ .numero1{
+  color: #fff;
+}
+.camisa1_goleiro:hover{
+  top: -10%;
+}
+
+
+
+
+
+
+.nome1{
+  position: absolute;
+  color: #ffffff;
+  font-size: 1vw;
+  z-index: 1000;
+  top: 70%;
+  left: 34%;
+  transition: 0.4s;
+}
+.numero1{
+  position: absolute;
+  color: #fff;
+  font-size: 1.5vw;
+  z-index: 1000;
+  top: 44%;
+  left: 4%;
+  transition: 0.4s;
+}
+.camisa1:hover + .nome1{
+  color: #000000;
+}
+.camisa1:hover ~ .numero1{
+  color: #5d5d5d;
+}
+.camisa1:hover{
+  top: 1%;
+}
+#camisa1_tudo:hover > .moldura{
+  width: 100%;
+}
+#camisa1_tudo:hover > .nome1{
+  color: #000000;
+}
+
+#estatisticas_jog:checked ~  #esquemas #carta1{
+  left: 0%;
+
+}
+.moldura{
+  transition: 0.4s;
+  background-color: rgb(251, 251, 248);
+  position: absolute;
+  width: 0%;
+  height: 40%;
+  top: 57%;
+  left: 0%;
+  clip-path: polygon(100% 31%, 86% 68%, 0 68%, 1% 31%);
+  border-radius: 100%;
+
+}
+.cansaco{
+  transition: 0.4s;
+  background-color: #2FCC2E;
+  position: absolute;
+  width: 80%;
+  height: 4%;
+  top: 65%;
+  left: 10%;
+  border-radius: 20px;
+}
+
+
+
+
+#camisa2_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 15%;
+  left: 54%;
+  z-index: 1000000;
+}
+#camisa2_tudo:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog2:checked ~  #esquemas2 #carta2{
+  left: 0%;
+
+}
+#camisa2_tudo:hover > .nome1{
+  color: #000000;
+}
+
+#camisa3_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 24%;
+  left: 15%;
+  z-index: 1000000;
+}
+#camisa3_tudo:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog3:checked ~  #esquemas3 #carta3{
+  left: 0%;
+}
+#camisa3_tudo:hover > .nome1{
+  color: #000000;
+}
+
+#camisa4_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 37%;
+  left: 34%;
+  z-index: 1000000;
+}
+#camisa4_tudo:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog4:checked ~  #esquemas4 #carta4{
+  left: 0%;
+}
+#camisa4_tudo:hover > .nome1{
+  color: #000000;
+}
+
+
+#camisa5_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 37%;
+  left: 57%;
+  z-index: 1000000;
+}
+#camisa5_tudo:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog5:checked ~  #esquemas5 #carta5{
+  left: 0%;
+}
+#camisa5_tudo:hover > .nome1{
+  color: #000000;
+}
+
+
+
+#camisa6_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 24%;
+  left: 74%;
+  z-index: 1000000;
+}
+#camisa6_tudo:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog6:checked ~  #esquemas6 #carta6{
+  left: 0%;
+}
+#camisa6_tudo:hover > .nome1{
+  color: #000000;
+}
+
+
+
+
+#camisa7_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 53%;
+  left: 13%;
+  z-index: 1000000;
+}
+#camisa7_tudo:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog7:checked ~  #esquemas7 #carta7{
+  left: 0%;
+}
+#camisa7_tudo:hover > .nome1{
+  color: #000000;
+}
+
+
+
+#camisa8_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 53%;
+  left: 77%;
+  z-index: 1000000;
+}
+#camisa8_tudo:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog8:checked ~  #esquemas8 #carta8{
+  left: 0%;
+}
+#camisa8_tudo:hover > .nome1{
+  color: #000000;
+}
+
+
+
+
+#camisa9_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 60%;
+  left: 36%;
+  z-index: 1000000;
+}
+#camisa9_tudo:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog9:checked ~  #esquemas9 #carta9{
+  left: 0%;
+}
+#camisa9_tudo:hover > .nome1{
+  color: #000000;
+}
+
+
+
+#camisa10_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 60%;
+  left: 54.5%;
+  z-index: 1000000;
+}
+#camisa10_tudo:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog10:checked ~  #esquemas10 #carta10{
+  left: 0% !important;
+}
+#camisa10_tudo:hover > .nome1{
+  color: #000000;
+}
+
+
+
+#camisa11_tudo{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 76%;
+  left: 45%;
+  z-index: 1000000;
+}
+#camisa11_tudo:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog11:checked ~  #esquemas11 #carta11{
+  left: 0%;
+}
+#camisa11_tudo:hover > .nome1{
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+#camisa1_tudo_1{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 15%;
+  left: 37%;
+  z-index: 1000000;
+}
+#camisa1_tudo_1:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog_1:checked ~  #esquemas_1 #carta1_1{
+  left: 0%;
+
+}
+#camisa1_tudo_1:hover > .nome1{
+  color: #000000;
+}
+
+#camisa2_tudo_2{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 15%;
+  left: 54%;
+  z-index: 1000000;
+}
+#camisa2_tudo_2:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog2_2:checked ~  #esquemas2_2 #carta2_2{
+  left: 0%;
+}
+#camisa2_tudo_2:hover > .nome1{
+  color: #000000;
+}
+
+#camisa3_tudo_3{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 24%;
+  left: 15%;
+  z-index: 1000000;
+}
+#camisa3_tudo_3:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog3_3:checked ~  #esquemas3_3 #carta3_3{
+  left: 0%;
+}
+#camisa3_tudo_3:hover > .nome1{
+  color: #000000;
+}
+
+#camisa4_tudo_4{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 37%;
+  left: 34%;
+  z-index: 1000000;
+}
+#camisa4_tudo_4:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog4_4:checked ~  #esquemas4_4 #carta4_4{
+  left: 0%;
+}
+#camisa4_tudo_4:hover > .nome1{
+  color: #000000;
+}
+
+
+#camisa5_tudo_5{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 37%;
+  left: 57%;
+  z-index: 1000000;
+}
+#camisa5_tudo_5:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog5_5:checked ~  #esquemas5_5 #carta5_5{
+  left: 0%;
+}
+#camisa5_tudo_5:hover > .nome1{
+  color: #000000;
+}
+
+
+
+#camisa6_tudo_6{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 24%;
+  left: 74%;
+  z-index: 1000000;
+}
+#camisa6_tudo_6:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog6_6:checked ~  #esquemas6_6 #carta6_6{
+  left: 0%;
+}
+#camisa6_tudo_6:hover > .nome1{
+  color: #000000;
+}
+
+
+
+
+#camisa7_tudo_7{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 53%;
+  left: 13%;
+  z-index: 1000000;
+}
+#camisa7_tudo_7:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog7_7:checked ~  #esquemas7_7 #carta7_7{
+  left: 0%;
+}
+#camisa7_tudo_7:hover > .nome1{
+  color: #000000;
+}
+
+
+
+#camisa8_tudo_8{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 53%;
+  left: 77%;
+  z-index: 1000000;
+}
+#camisa8_tudo_8:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog8_8:checked ~  #esquemas8_8 #carta8_8{
+  left: 0%;
+}
+#camisa8_tudo_8:hover > .nome1{
+  color: #000000;
+}
+
+
+
+
+#camisa9_tudo_9{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 60%;
+  left: 36%;
+  z-index: 1000000;
+}
+#camisa9_tudo_9:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog9_9:checked ~  #esquemas9_9 #carta9_9{
+  left: 0%;
+}
+#camisa9_tudo_9:hover > .nome1{
+  color: #000000;
+}
+
+
+
+#camisa10_tudo_10{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 60%;
+  left: 54.5%;
+  z-index: 1000000;
+}
+#camisa10_tudo_10:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog10_10:checked ~  #esquemas10_10 #carta10_10{
+  left: 0%  !important;
+}
+#camisa10_tudo_10:hover > .nome1{
+  color: #000000;
+}
+
+
+
+#camisa11_tudo_11{
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  top: 76%;
+  left: 45%;
+  z-index: 1000000;
+}
+#camisa11_tudo_11:hover > .moldura{
+  width: 100%;
+}
+#estatisticas_jog11_11:checked ~  #esquemas11_11 #carta11_11{
+  left: 0%;
+}
+#camisa11_tudo_11:hover > .nome1{
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+#nome_ide_2 {
+  text-align: center;
+  left: 14%;
+}
+
+#nome_ide_4 {
+  left: 25%;
+}
+
+#nome_carta_ide2 {
+  left: 36%;
+}
+#nome_carta_ide4 {
+  left: 45%;
+}
+#nome_carta_ide5 {
+  left: 53%;
+}
+#nome_carta_ide6 {
+  left: 53%;
+}

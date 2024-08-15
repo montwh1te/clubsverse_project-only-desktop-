@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/site_projeto_final.css">
+	<link rel="shortcut icon" href="../icones/logo_SITE_branca_sem_nome.ico" type="image/x-icon">
+    <title>Início</title>
+  </head>
+  <body>
+	<input id="input_comecar" type="checkbox">
+
+    <header>
+      <nav class="navbar">
+        <ul>
+			<li class="item1"><a href="../html/site_projeto_final.html">início</a></li>
+			<li class="item1"><a href="../html/noticias.html">notícias</a></li>
+			<li class="item1"><a href="../html/jogadores.html">jogadores</a></li>
+			<li class="item1"><a href="../html/taticas.html">táticas</a></li>
+			<li class="item1"><a href="../html/galeria.html">galeria</a></li>
+			<li class="item1"><a href="../html/conquistas.html">conquistas</a></li>
+			<li class="item1"><a style="text-transform: none;" href="../html/associe-se.html">Associe-se</a></li>
+			<li class="item1"><a href="../html/sobre.html">sobre</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <a href="../html/site_projeto_final.html" id="logo"><img id="logo_principal" src="../imagens/logo_SITE_preta_sem_nome.png"></a>
+
+	<div id="parte_de_cima">
+		<img id="imagem_parte_de_cima" src="../imagens/certa.png" alt="imagem_parte_de_cima">
+		<h2 id="bem_vindo">Boas Vindas</h2>
+		<h3 id="ao">ao</h3>
+		<h1 id="clubsverse">Clubs Verse</h1>
+		<div id="descricao_site"><p class="paragrafo_descricao_site">O único lugar onde você imergirá em um Universo nunca apresentado no cenário do Clubs.</p><p class="paragrafo_descricao_site">Aqui você poderá exibir todas informações e detalhes do seu clube, assim como, faremos com os dois maiores clubes do cenário, Vermífugos FC e Restinga Velha.</p>
+		<p class="paragrafo_descricao_site">Em breve estaremos disponibilizando novos recursos de personalização e mecanismos de edição para os seus próprios clubes.</p></div>
+		<label id="label_comecar" for="input_comecar">
+			<div class="flip1" id="agrupamento">
+				<div class="face1" id="vamos_comecar">
+					<h3 id="comecar">COMEÇAR</h3>
+				</div>
+				<div class="face1" id="vamos_explorar">
+					<a href="#href1" id="explorar">EXPLORAR</a>
+				</div>
+			</div>
+			<script>
+				const card1 = document.querySelector("#agrupamento")
+				vamos_comecar.addEventListener("click",(e)=>{
+				  card1.classList.toggle("flip1")
+				})
+			  </script>
+		</label>
+	</div>
+
+	<div id="parte_do_meio">
+		<!--<div id="sobre"><h2 id="sobre_texto">SOBRE: </h2></div>--> 
+		<div id="href1"></div>
+		<div id="sobre1">
+			<h2 id="texto_vermifugos">VERMÍFUGOS FC</h2>
+			<img id="imagem_vermifugos" src="../imagens/lyon-logo.png"
+			alt="logo-lyon">
+			<h3 id ="detalhada_vermifugos">O Vermífugos FC emerge como uma instituição vibrante no cenário do futebol, um time cujo nome intriga e inspira. Surgido em 2018, com suas cores vibrantes que evocam a vitalidade e a energia, este clube traz consigo uma determinação e uma ética de trabalho incansável. Seus jogadores, conhecidos tanto por sua habilidade técnica refinada quanto por sua resistência física, personificam a tenacidade e a agilidade que são a essência do jogo. Sob o comando de treinadores vitoriosos, o Vermífugos FC não só busca a vitória nos gramados, mas também promove valores de solidariedade, respeito e paixão pelo esporte. Eles são mais do que um time; são uma fonte de inspiração para os amantes do futebol em todo o mundo.</h3>
+		</div>
+
+		<div id="sobre2">
+			<h2 id="texto_restinga">RESTINGA VELHA</h2>
+			<img id="imagem_restinga" src="../imagens/sem fundo.png"
+			alt="logo-restinga">
+			<h3 id="detalhada_restinga">O Restinga Velha FC é um time que carrega consigo a essência e a história de sua comunidade. Nomeado em homenagem às origens e à tradição de seu bairro, este clube respira futebol com um espírito de união e orgulho local. Suas cores evocam as paisagens e os valores enraizados na região, enquanto seus jogadores personificam a determinação e a habilidade forjadas nos campos de terra batida que moldaram suas carreiras. Sob a orientação de técnicos apaixonados, o Restinga Velha FC não apenas busca vitórias, mas também nutre uma conexão profunda com seus torcedores, transformando cada partida em uma celebração da comunidade e do esporte. Eles são mais do que um time; são uma parte vital do tecido cultural e esportivo de sua cidade.</h3>
+		</div>
+	</div>
+
+	<div id="parte_de_baixo">
+		<div id="objetivo"><h2 id="sobre_objetivo">CONFIRA AINDA: </h2></div>
+
+		<div id="objetivos_topicos">
+			<div id="topico1">
+				<div id="div_imagem_topico1"><img src="../imagens/grafico1.png" id="imagem_topico1"></div>
+				<h3 id="texto_topico1">Estatísticas detalhadas dos jogadores</h3>
+				<h4 id="descricao_topico1">Explore os atributos individuais de cada jogador, como velocidade, habilidade de driblar, precisão de passes e resistência física, fornecendo uma visão detalhada das características que definem seu desempenho em campo. Análise minuciosa dos atributos técnicos e físicos de cada jogador, destacando pontos fortes e áreas de melhoria, essenciais para entender seu papel no time e sua contribuição para estratégias de jogo.</h4>
+			</div>
+			<div id="topico2">
+				<div id="div_imagem_topico2"><img src="../imagens/taticas.png" alt="taticas" id="imagem_topico2"></div>
+				<h3 id="texto_topico2">Análises de jogos</h3>
+				<h4 id="descricao_topico2">Análise aprofundada das táticas personalizadas e padrões de jogo adotados por cada time, incluindo formações táticas preferidas, estilo de jogo predominante e estratégias específicas para diferentes adversários. Exploração detalhada das táticas e estratégias utilizadas pelo time, cobrindo padrões de movimento, pressão alta, transições rápidas e outras abordagens táticas que definem sua identidade no campo.</h4>
+			</div>
+			<div id="topico3">
+				<div id="div_imagem_topico3"><img src="../imagens/noticias.jpg" alt="ultimas-do-clubs" id="imagem_topico3"></div>
+				<h3 id="texto_topico3">Últimas do Clubs</h3>
+				<h4 id="descricao_topico3">Atualizações exclusivas sobre os clubes, incluindo transferências, lesões, decisões táticas recentes e novidades sobre contratos de jogadores. Notícias recentes sobre os clubes, cobrindo novas contratações, mudanças de técnicos, atualizações de infraestrutura e eventos especiais relacionados ao time.</h4>
+			</div>
+		</div>
+	<footer id="footer">
+		<img id="imagem_footer" src="../imagens/logo_SITE_branca_com_nome.png" alt="logo_footer">
+		<img id="imagem_whats_footer" src="../imagens/icone_whats.webp" alt="whats_footer">
+		<h6 id="sobre_nos_footer"><a class="links_footer" href="../html/sobre.html">Sobre nós</a></h6>
+		<h6 id="associe-se"><a class="links_footer" href="../html/associe-se.html">Associe-se</a></h6>
+		<h6 id="noticias_footer"><a class="links_footer" href="../html/noticias.html">Notícias</a></h6>
+		<h6 id="forum_footer"><a class="links_footer">Fórum</a></h6>
+		<h5 id="se_inscreva_footer">Newsletter</h5>
+		<input id="input_email" name="email" type="email" placeholder="   Digite seu email ou contate-nos...">
+		<label for="input_email"><button id="enviar">Enviar</button></label>
+	</footer>
+  </body>
+</html>

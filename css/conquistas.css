@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background: url(clean.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar-track{
+  background-color: white;
+}
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background:#133413;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #102b10 ;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffff;
+  box-shadow: -8px -3px 10px 0px rgb(0 0 0 / 69%);
+  padding: 0px 10%;
+  z-index: 1000;
+}
+
+header .navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+  text-transform: capitalize;
+}
+.item1{
+      left: 48%;
+      transition: 0.4s;
+}
+
+header .navbar ul li a {
+  font-size: 1.075vw;
+  padding: 2vh;
+  color: #333;
+  display: block;
+}
+
+header .navbar ul li a:hover {
+  background: #000000;
+  color: #ffffff;
+}
+#logo {
+  background: transparent;
+  position: fixed;
+  z-index: 1000;
+  left: 1%;
+  width: 3.5%;
+  top: 0.4%;
+}
+#logo_principal {
+  width: 96%;
+  z-index: 1;
+}
+
+
+
+
+
+#restinga{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: #fffcfc;
+  top: 0;
+  left: 100%;
+  transition: 0.7s;
+  
+}
+
+#verme{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: #fffcfc;
+  right: 0;
+  top: 0;
+  transition: 0.7s;
+}
+
+#logo1_1 {
+  width: 10%;
+  position: absolute;
+  z-index: 100;
+  left: 45.1%;
+  top: 6.3%;
+}
+#logo2_2 {
+  width: 7%;
+  position: absolute;
+  z-index: 100;
+  left: 46.6%;
+  top: 8.4%;
+}
+.seta_direita_lab{
+  width: 3%;
+  z-index: 100;
+  height: 6vh;
+  position: absolute;
+  top: 49%;
+  left: 94%;
+  cursor: pointer;
+  background: #0000006c;
+  border-radius: 100%;
+}
+.seta_esquerda_lab{
+  width: 3%;
+  z-index: 100;
+  height: 6vh;
+  position: absolute;
+  top: 47%;
+  left: 3%;
+  transform: rotate(180deg);
+  cursor: pointer;
+  background: #0000006c;
+  border-radius: 100%;
+  display: none;
+}
+.seta_direita {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 14%;
+  top: 9%;
+}
+.seta_esquerda {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 14%;
+  top: 9%;
+}
+
+#res:checked ~ #restinga{
+  left: 100%;
+}
+#res:checked ~ #verme{
+  right: 0;
+}
+
+
+#ver:checked ~ #restinga{
+  left: 0;
+}
+#ver:checked ~ #verme{
+  right: 100%;
+}
+
+#ver:checked ~ .seta_direita_lab{
+  display: none;
+}
+#ver:checked ~ .seta_esquerda_lab{
+  display: block;
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.trofeus {
+  position: absolute;
+  top: -8%;
+  width: 100%;
+}
+
+
+
+#trofeu1{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 62%;
+  top: 31%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu1:hover{
+  top: 28%;
+}
+#trofeu2{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 55%;
+  top: 57%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu2:hover{
+  top: 54%;
+}
+#trofeu3{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 17%;
+  top: 50%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu3:hover{
+  top: 47%;
+}
+#trofeu4{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 39%;
+  top: 57%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu4:hover{
+  top: 54%;
+}
+#trofeu5{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 71%;
+  top: 19%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu5:hover{
+  top: 16%;
+}
+#trofeu6{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 8%;
+  top: 37%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu6:hover{
+  top: 34%;
+}
+#trofeu7{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 74%;
+  top: 37%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu7:hover{
+  top: 34%;
+}
+
+
+.clubs_verse_titulo {
+  color: #000000;
+  font-weight: 900;
+  font-size: 1.23vw;
+  position: absolute;
+  top: 43%;
+  z-index: 100;
+  left: 45%;
+  width: 40%;
+}
+.stats {
+  color: #000000;
+  font-weight: 900;
+  font-size: 1.6vw;
+  position: absolute;
+  top: 34.7%;
+  z-index: 100;
+  left: 45.1%;
+}
+
+
+
+
+
+#trofeu8{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 77%;
+  top: 38%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu8:hover{
+  top: 35%;
+}
+#trofeu9{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 55%;
+  top: 57%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu9:hover{
+  top: 54%;
+}
+#trofeu10{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 8%;
+  top: 36%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu10:hover{
+  top: 33%;
+}
+#trofeu11{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 37%;
+  top: 55%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu11:hover{
+  top: 52%;
+}
+#trofeu12{
+  z-index: 10;
+  position: absolute;
+  width: 27%;
+  left: 15%;
+  top: 11%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu12:hover{
+  top: 8%;
+}
+#trofeu13{
+  z-index: 10;
+  position: absolute;
+  width: 10%;
+  left: 9.5%;
+  top: 16.4%;
+  transition: 0.4s;
+  cursor: pointer;
+}
+#trofeu13:hover{
+  top: 13.4%;
+}
+
+
+
+
+
+
+

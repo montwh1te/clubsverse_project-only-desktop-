@@ -1,0 +1,628 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+    }
+    
+    body {
+      min-height: 100vh;
+      background-image: url(../imagens/10695970-textura-grunge-background-grainy-textura-abstrata-em-um-fundo-branco-background-highly-detalhado-grunge-com-espaco-foto.png);
+      background-position: center;
+      overflow-x: hidden;
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar-track{
+      background-color: white;
+    }
+    ::-webkit-scrollbar{
+      width: 12px;
+    }
+    ::-webkit-scrollbar-thumb{
+      background:#133413;
+      border-radius: 20px;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+      background: #102b10 ;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #ffff;
+      box-shadow: -8px -3px 10px 0px rgb(0 0 0 / 69%);
+      padding: 0px 10%;
+      z-index: 1000;
+    }
+    
+    header .navbar ul {
+      list-style: none;
+    }
+    
+    header .navbar ul li {
+      position: relative;
+      float: left;
+      text-transform: capitalize;
+    }
+    .item1{
+          left: 48%;
+          transition: 0.4s;
+    }
+    
+    header .navbar ul li a {
+      font-size: 1.075vw;
+      padding: 2vh;
+      color: #333;
+      display: block;
+    }
+    
+    header .navbar ul li a:hover {
+      background: #000000;
+      color: #ffffff;
+    }
+    
+    
+    
+    
+    #logo {
+      background: transparent;
+      position: fixed;
+      z-index: 1000;
+      left: 1%;
+      width: 3.5%;
+      top: 0.4%;
+    }
+    #logo_principal {
+      width: 96%;
+      z-index: 1;
+    }
+
+
+
+#parte_de_cima{
+      width: 100vw;
+      height: 100vh;
+      background: black;
+}
+#imagem_parte_de_cima{
+      width: 94%;
+      height: 94%;
+      margin-left: 13%;
+      margin-top: 3%;
+      transition: 0.7s;
+}
+#bem_vindo{
+      font-size: 5vw;
+      position: absolute;
+      top: 22%;
+      left: 12.5%;
+      color: white;
+      font-family: "Great Vibes", cursive;
+      font-weight: 400;
+      font-style: normal;
+}
+#ao{
+      font-size: 4vw;
+      position: absolute;
+      top: 34%;
+      left: 23%;
+      color: white;
+      font-family: "Great Vibes", cursive;
+      font-weight: 400;
+      font-style: normal;
+}
+#clubsverse{
+      font-size: 5vw;
+      position: absolute;
+      top: 47%;
+      left: 13.5%;
+      color: white;
+      font-family: "Great Vibes", cursive;
+      font-weight: 400;
+      font-style: normal;
+}
+#descricao_site{
+      background: #000000c9;
+      border-radius: 15px;
+      color: white;
+      width: 30%;
+      height: 60%;
+      position: absolute;
+      z-index: 100;
+      top: 22%;
+      left: 115%;
+      transition: 0.7s;
+}
+.paragrafo_descricao_site{
+      padding: 10% 10% 0% 10%;
+      font-size: 1.3vw;
+}
+#input_comecar{
+      display: none;
+}
+#input_comecar:checked ~ #parte_de_cima #imagem_parte_de_cima{
+      filter: blur(5px);
+}
+#input_comecar:checked ~ #parte_de_cima #descricao_site{
+      left: 60%;
+}
+
+
+#agrupamento{
+      width: 21%;
+      height: 15%;
+      border-radius: 84px;
+      background: white;
+      transform-style: preserve-3d;
+      transition: all .9s;
+      position: absolute;
+      top: 65%;
+      left: 13.5%;
+}
+
+
+
+
+.face1{
+      width: 100%;
+      height: 100%;
+      background: white;
+      position: absolute;
+      border-radius: 84px;
+}
+#vamos_comecar{
+      background: linear-gradient(to right, rgb(255, 255, 255) 50%, #6bea75 50%) left;
+      background-size: 200%;
+      transition: .5s ease-out;
+      transform: rotateY(180deg);
+      cursor: pointer;
+}
+#vamos_comecar:hover{
+      background-position: right;
+}
+#comecar{
+      font-size: 2vw;
+      background: transparent;
+      position: absolute;
+      top: 34%;
+      left: 24%;
+      z-index: 100;
+}
+#vamos_explorar{
+      z-index: 10;
+      background: linear-gradient(to right, rgb(255, 255, 255) 50%, #6bea75 50%) left;
+      background-size: 200%;
+      transition: .5s ease-out;
+      backface-visibility: hidden;
+}
+#vamos_explorar:hover{
+      background-position: right;
+}
+#explorar{
+      font-size: 2vw;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      background: transparent;
+      position: absolute;
+      padding: 21%;
+      top: -22%;
+      left: 3%;
+      z-index: 100;
+      cursor: pointer;
+}
+.flip1{
+      transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#parte_do_meio{
+      position: absolute;
+      width: 100%;
+      height: 130vh;
+      background: transparent;
+}
+
+
+
+#sobre{
+      background: transparent;
+      position: absolute;
+      width: 100%;
+      height: 5vw;
+      top: 10%;
+}
+#sobre_texto{
+      position: absolute;
+      left: 5%;
+      font-size: 2vw;
+      color: black;
+      font-size: 3vw;
+}
+
+#href1{
+      width: 10%;
+      height: 10%;
+      position: absolute;
+      left: 5%;
+}
+
+#sobre1{
+      background: linear-gradient(270deg, #274288, #0c1e4c);
+      position: absolute;
+      width: 90%;
+      height: 40vw;
+      top: 10%;
+      left: 5%;
+      box-shadow: 1px 1px 7px 3px black;
+      filter: drop-shadow(-20px 20px 1px #D2B453);
+
+}
+#sobre2{
+      background: linear-gradient(270deg, #22223A, #0f0f1b);
+      position: absolute;
+      width: 90%;
+      height: 40vw;
+      top: 79%;
+      left: 5%;
+      box-shadow: 1px 1px 7px 3px black;
+      filter: drop-shadow(-20px 20px 1px black);
+
+}
+
+
+
+
+
+#texto_vermifugos{
+      background: transparent;
+      position: absolute;
+      width: 100%;
+      height: 5vw;
+      top: 12%;
+      left: 40%;
+      font-size: 5vw;
+      color: #fff;
+}
+#imagem_vermifugos{
+      position: absolute;
+      left: 5%;
+      top: 12%;
+      width: 30%;
+}
+#detalhada_vermifugos{
+      position: absolute;
+      top: 33%;
+      width: 50%;
+      left: 40%;
+      text-align: justify;
+      font-weight: normal;
+      font-size: 1.4vw;
+      color: #fff;
+}
+
+
+
+
+
+
+#texto_restinga{
+      background: transparent;
+      position: absolute;
+      width: 100%;
+      height: 5vw;
+      top: 15%;
+      left: 40%;
+      font-size: 5vw;
+      color: #fff;
+}
+#imagem_restinga{
+      position: absolute;
+      left: 0%;
+      top: 10%;
+      width: 38%;
+}
+#detalhada_restinga{
+      position: absolute;
+      top: 35%;
+      width: 50%;
+      left: 40%;
+      text-align: justify;
+      font-weight: normal;
+      font-size: 1.4vw;
+      color: #fff;
+}
+
+
+
+#parte_de_baixo{
+      background: transparent;
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      top: 217%;
+}
+#objetivo{
+      background: transparent;
+      position: relative;
+      width: 100%;
+      top: 80%;
+}
+#sobre_objetivo{
+      position: absolute;
+      left: 5%;
+      font-size: 3vw;
+      top: 20%;
+      z-index: 100;
+      color: black;
+}
+#objetivos_topicos {
+      position: absolute;
+      background: transparent;
+      width: 100%;
+      height: 120%;
+      top: 0%;
+}
+
+
+
+#topico1 {
+      position: absolute;
+      top: 78%;
+      background: #b7b7b7;
+      width: 90%;
+      height: 25%;
+      left: 5%;
+}
+#div_imagem_topico1{
+      position: absolute;
+      background: #ffffff;
+      height: 100%;
+      width: 18.4%;
+      box-shadow: 7px 0px 20px #646161;     
+}
+#imagem_topico1{
+      position: absolute;
+      top: 20%;
+      left: 13%;
+      height: 64%;
+      width: 75%;
+}
+#texto_topico1{
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 2vw;
+      width: 70%;
+      height: 100%;
+      left: 25%;
+      text-align: justify;
+      top: 25%;
+}
+#descricao_topico1{
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 0.93vw;
+      top: 55%;
+      width: 67%;
+      height: 100%;
+      left: 25%;
+      text-align: justify;
+}
+
+
+
+#topico2 {
+      position: absolute;
+      top: 107%;
+      background: #b7b7b7;
+      width: 90%;
+      height: 25%;
+      left: 5%;
+}
+#div_imagem_topico2{
+      position: absolute;
+      background: #ffffff;
+      height: 100%;
+      width: 18%;
+      box-shadow: -7px 0px 20px #646161;
+      left: 82%;
+}
+#imagem_topico2{
+      position: absolute;
+      background: #ffffff;
+      top: 15%;
+      height: 70%;
+      width: 73%;
+      left: 15%;
+}
+#texto_topico2 {
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 2vw;
+      width: 70%;
+      height: 100%;
+      text-align: justify;
+      top: 25%;
+      left: 50%;
+}
+#descricao_topico2 {
+      position: absolute;
+    text-transform: uppercase;
+    font-size: 0.93vw;
+    top: 55%;
+    width: 67%;
+    height: 100%;
+    left: 8%;
+    text-align: justify;
+}
+
+
+
+#topico3{
+      position: absolute;
+      top: 136%;
+      background: #b7b7b7;
+      width: 90%;
+      height: 25%;
+      left: 5%;
+}
+#div_imagem_topico3{
+      position: absolute;
+      background: #ffffff;
+      height: 100%;
+      width: 18%;
+      box-shadow: 7px 0px 20px #646161;
+}
+#imagem_topico3 {
+      position: absolute;
+      top: 15%;
+      left: 16%;
+      height: 70%;
+      width: 70%;
+}
+#texto_topico3 {
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 2vw;
+      width: 70%;
+      height: 100%;
+      left: 25%;
+      text-align: justify;
+      top: 25%;
+}
+#descricao_topico3{
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 0.93vw;
+      top: 55%;
+      width: 67%;
+      height: 100%;
+      left: 25%;
+      text-align: justify;
+}
+
+
+
+
+#footer{
+      width: 100%;
+      height: 20vh;
+      background-color: black;
+      z-index: 10000;
+      position: absolute;
+      top: 205%;
+    }
+    #imagem_footer{
+      position: absolute;
+      left: 2%;
+      width: 10%;
+      top: 5%;
+    }
+    #imagem_whats_footer{
+      left: 87%;
+      top: 50.3%;
+      position: absolute;
+      z-index: 100;
+      width: 1.5%;
+      cursor: pointer;
+    }
+    #sobre_nos_footer{
+      position: absolute;
+      background-color: black;
+      text-decoration: underline;
+      color: #9e9a9a;
+      left: 20%;
+      width: auto;
+      font-size: 1vw;
+      height: 16%;
+      top: 45%;
+    }
+    #associe-se{
+      position: absolute;
+      background-color: black;
+      text-decoration: underline;
+      color: #9e9a9a;
+      left: 31%;
+      width: auto;
+      font-size: 1vw;
+      height: 16%;
+      top: 45%;
+    }
+    #noticias_footer{
+      position: absolute;
+      background-color: black;
+      text-decoration: underline;
+      color: #9e9a9a;
+      left: 42%;
+      top: 45%;
+      width: auto;
+      font-size: 1vw;
+      height: 16%;
+    }
+    #forum_footer{
+      position: absolute;
+      background-color: black;
+      text-decoration: underline;
+      color: white;
+      left: 52%;
+      top: 45%;
+      width: auto;
+      font-size: 1vw;
+      height: 16%;
+    }
+    #se_inscreva_footer{
+      position: absolute;
+      background-color: black;
+      color: white;
+      font-size: 1.1vw;
+      left: 71%;
+      top: 29%;
+    }
+    #input_email{
+      position: absolute;
+      top: 47%;
+      left: 71%;
+      height: 22%;
+      width: 18%;
+      border-radius: 3%;
+      border: 3px solid #133413;
+    }
+    #enviar{
+      position: absolute;
+      top: 47%;
+      width: 5%;
+      left: 89.5%;
+      height: 22%;
+      text-transform: uppercase;
+      font-size: 0.7vw;
+      border-radius: 3%;
+      border: 3px solid #133413;
+      background: #133413;
+      color: white;
+      cursor: pointer;
+    }
+    .links_footer{
+      color: white;
+      cursor: pointer;
+    }

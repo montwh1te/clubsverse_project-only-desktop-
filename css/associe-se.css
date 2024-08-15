@@ -1,0 +1,901 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+html, main{
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track{
+  background-color: white;
+}
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background:#133413;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #102b10 ;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffff;
+  box-shadow: -8px -3px 10px 0px rgb(0 0 0 / 69%);
+  padding: 0px 10%;
+  z-index: 1000;
+}
+
+header .navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+  text-transform: capitalize;
+}
+.item1{
+      left: 48%;
+}
+
+header .navbar ul li a {
+  font-size: 1.075vw;
+  padding: 2vh;
+  color: #333;
+  display: block;
+}
+
+header .navbar ul li a:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+#logo {
+  background: transparent;
+  position: fixed;
+  z-index: 1000;
+  left: 1%;
+  width: 3.5%;
+  top: 0.4%;
+}
+#logo_principal {
+  width: 96%;
+  z-index: 1;
+}
+
+#seta_direita{
+  width: 0;
+}
+#seta_esquerda{
+  width: 0;
+}
+#label_seta_direita{
+  border-radius: 100%;
+  top: 48%;
+  left: 95%;
+  width: 3%;
+  height: 6%;
+  position: fixed;
+  z-index: 1000;
+  background: #5c615ca6;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+}
+#label_seta_esquerda{
+  border-radius: 100%;
+  top: 48%;
+  left: 2%;
+  width: 3%;
+  height: 6%;
+  position: fixed;
+  z-index: 1000;
+  background: #5c615c75;
+  cursor: pointer;
+  display: none;
+  z-index: 1;
+}
+#imagem_seta_esquerda{
+  width: 2%;
+  position: fixed;
+  top: 49%;
+  left: 2.4%;
+  rotate: 180deg;
+  transition: 0.7s;
+}
+#imagem_seta_direita{
+  width: 2%;
+  position: fixed;
+  top: 49%;
+  left: 95.6%;
+}
+
+
+
+
+
+
+
+#vermifugos{
+  background: linear-gradient(270deg, #da001c, #5b0000);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  right: 0%;
+  transition: 0.7s !important;
+}
+#seta_direita:checked ~ main #vermifugos{
+  right: 100%;
+}
+#seta_direita:checked ~ main #restinga{
+  left: 0%;
+}
+#seta_direita:checked ~ main #restinga_planos{
+  left: 0%;
+}
+#seta_direita:checked ~ main #label_seta_direita{
+  display: none;
+}
+#seta_direita:checked ~ main #label_seta_esquerda{
+  display: block;
+}
+#cartao_socio{
+  width: 33.5%;
+  position: absolute;
+  top: 28%;
+  left: 13%;
+  z-index: 10;
+  border-radius: 15px;
+}
+#card_mao{
+  width: 69%;
+  position: absolute;
+  top: 6%;
+}
+#fundo_dourado{
+  position: absolute;
+  z-index: 5;
+  height: 13%;
+  width: 25%;
+  top: 52%;
+  left: 14%;
+}
+#seja_socio{
+  position: absolute;
+  top: 14%;
+  left: 56%;
+  color: white;
+  font-size: 7vw;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#seja_socio2{
+  position: absolute;
+  width: 22%;
+  top: 36%;
+  left: 62%;
+  color: white;
+  font-size: 2vw;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 114%;
+}
+#beneficios{
+  position: absolute;
+  width: 24%;
+  top: 49%;
+  left: 62%;
+  color: white;
+  font-size: 1.1vw;
+  line-height: 205%;
+  text-align: justify;
+}
+#input_associe-se{
+  display: none;
+}
+#input_associe-se:checked ~ main #label_seta_esquerda #imagem_seta_esquerda{
+  width: 2%;
+  position: fixed;
+  top: 49%;
+  left: 2.4%;
+  transition: 0.7s;
+  rotate: 90deg;
+}
+#input_associe-se:checked ~ main #label_seta_direita{
+  display: none;
+}
+#label_associe-se{
+  width: 20%;
+  height: 12%;
+  border-radius: 10px;
+  position: absolute;
+  top: 76%;
+  left: 63%;
+  background: white;
+  color: black;
+  box-shadow: 0px 0px 12px 2px black;
+  cursor: pointer;
+}
+#texto_associe-se{
+  position: absolute;
+  color: black;
+  top: 0%;
+  left: -5%;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 11% 33%;
+  font-size: 1.4vw;
+  width: 111%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#vermifugos_planos{
+  position: absolute;
+  background-image: url(../imagens/fundo_torcida3.png);
+  height: 100vh;
+  top: 102%;
+  width: 100vw;
+  scroll-behavior: smooth;
+  z-index: 10;
+}
+#vermifugos_planos_cima{
+  position: absolute;
+  backdrop-filter: blur(4px) brightness(0.5);
+  background: transparent;
+  height: 100vh;
+  width: 100vw;
+}
+#socio_vermifugo{
+  position: absolute;
+  top: 13%;
+  left: 36%;
+  color: white;
+  backdrop-filter: blur(2px);
+  font-weight: normal;
+  font-family: 'Shadows Into Light';
+  font-size: 4vw;
+}
+#descricao_socio_vermifugo{
+  position: absolute;
+  top: 26.5%;
+  left: 38%;
+  color: white;
+  backdrop-filter: blur(2px);
+  font-weight: normal;
+  font-family: 'Shadows Into Light';
+  font-size: 2vw;
+}
+.imagem_socio{
+  position: absolute;
+  top: 8%;
+  left: 22%;
+  width: 56%;
+  height: 24.5%;
+  background: aqua;
+}
+.preco{
+  position: absolute;
+  font-size: 1.2vw;
+  top: 42%;
+  left: 29%;
+}
+.vantagens{
+  background: #D8B973;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 47%;
+  height: 12%;
+  position: absolute;
+  top: 56%;
+  left: 28%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9vw;
+  transition: 0.7s;
+}
+.vantagens:hover{
+  background: #D8B973;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 49%;
+  height: 14%;
+  position: absolute;
+  top: 56%;
+  left: 27%;
+  box-shadow: 0px 3px 9px 1px black;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9vw;
+}
+.vantagens:hover + .associe-se{
+  background: #DC0714;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 47%;
+  height: 12%;
+  position: absolute;
+  top: 75%;
+  left: 28%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9vw;
+}
+.associe-se{
+  background: #DC0714;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 47%;
+  height: 12%;
+  position: absolute;
+  top: 74%;
+  left: 28%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9vw;
+  transition: 0.7s;
+}
+.associe-se:hover{
+  background: #DC0714;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 49%;
+  height: 14%;
+  position: absolute;
+  top: 74%;
+  left: 27%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9vw;
+  box-shadow: 0px 3px 9px 3px black;
+}
+.mes{
+  position: absolute;
+  font-size: 1vw;
+  font-weight: normal;
+  top: 42.3%;
+  left: 56%;
+}
+#mes_plano1{
+  position: absolute;
+  font-size: 1vw;
+  font-weight: normal;
+  top: 42.3%;
+  left: 55%;
+}
+#preco_plano1{
+  position: absolute;
+  font-size: 1.2vw;
+  top: 42%;
+  left: 31%;
+}
+#seta_vermifugos_planos{
+  top: 5%;
+  left: 14%;
+  width: 71.7%;
+  height: 83%;
+  rotate: -90deg;
+  position: absolute;
+}
+#envoltorio_seta_vermifugos_planos{
+  border-radius: 100%;
+  top: 48%;
+  left: 2%;
+  width: 3%;
+  height: 6%;
+  position: absolute;
+  z-index: 1000;
+  background: #5c615c75;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#botao_maisinfo1{
+  position: absolute;
+  left: 84%;
+  top: 4%;
+  width: 14%;
+  cursor: pointer;
+}
+#botao_menosinfo1{
+  position: absolute;
+  left: 86%;
+  top: 3.5%;
+  width: 9%;
+  cursor: pointer;
+}
+
+#botao_maisinfo2{
+  position: absolute;
+  left: 84%;
+  top: 4%;
+  width: 14%;
+  cursor: pointer;
+}
+#botao_menosinfo2{
+  position: absolute;
+  left: 86%;
+  top: 3.5%;
+  width: 9%;
+  cursor: pointer;
+}
+
+#botao_maisinfo3{
+  position: absolute;
+  left: 84%;
+  top: 4%;
+  width: 14%;
+  cursor: pointer;
+}
+#botao_menosinfo3{
+  position: absolute;
+  left: 86%;
+  top: 3.5%;
+  width: 9%;
+  cursor: pointer;
+}
+
+.face1{
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  border-radius: 20px;
+}
+.face2{
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  border-radius: 20px;
+}
+.face3{
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  border-radius: 20px;
+}
+
+#card1{
+  width: 20%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transition: all .9s;
+  position: absolute;
+  top: 40%;
+  left: 16%;
+}
+#front1{
+  background-color: white;
+  transform: rotateY(180deg);
+}
+#back1{
+  z-index: 10;
+  background-color: rgb(230, 230, 230);
+  backface-visibility: hidden;
+}
+.flip1{
+  transform: rotateY(180deg);
+}
+
+#card2{
+  width: 20%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transition: all .9s;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+#front2{
+  background-color: white;
+  transform: rotateY(180deg);
+}
+#back2{
+  z-index: 10;
+  background-color: rgb(230, 230, 230);
+  backface-visibility: hidden;
+}
+.flip2{
+  transform: rotateY(180deg);
+}
+
+#card3{
+  width: 20%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transition: all .9s;
+  position: absolute;
+  top: 40%;
+  left: 64%;
+}
+#front3{
+  background-color: white;
+  transform: rotateY(180deg);
+}
+#back3{
+  z-index: 10;
+  background-color: rgb(230, 230, 230);
+  backface-visibility: hidden;
+}
+.flip3{
+  transform: rotateY(180deg);
+}
+
+#lista1{
+  z-index: -1;
+  font-size: 0.87vw;
+  list-style: disc;
+  position: absolute;
+  top: 13%;
+  left: 12%;
+  width: 82%;
+  line-height: 150%;
+  text-align: justify;
+}
+#lista2{
+  z-index: -1;
+  font-size: 0.87vw;
+  list-style: disc;
+  position: absolute;
+  top: 13%;
+  left: 12%;
+  width: 82%;
+  line-height: 126%;
+  text-align: justify;
+}
+#lista3{
+  z-index: -1;
+  font-size: 0.87vw;
+  list-style: disc;
+  position: absolute;
+  top: 13%;
+  left: 12%;
+  width: 82%;
+  line-height: 161%;
+  text-align: justify;
+}
+
+
+
+
+
+#restinga{
+  position: absolute;
+  background: linear-gradient(90deg, #011ea0, #031961);
+  height: 100vh;
+  width: 100vw;
+  left: 100%;
+  transition: 0.7s;
+}
+#cartao_socio_2{
+  position: absolute;
+  width: 33.3%;
+  rotate: -10deg;
+  top: 7.8%;
+  left: 5%;
+}
+#cartao_socio_3{
+  position: absolute;
+  width: 33.33%;
+  top: 47.6%;
+  left: 58.5%;
+  rotate: 9deg;
+}
+#seja_socio3{
+  position: absolute;
+  top: 11%;
+  left: 44%;
+  color: white;
+  font-size: 6vw;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#seja_socio4{
+  position: absolute;
+  width: 49%;
+  top: 56%;
+  left: 9%;
+  color: white;
+  font-size: 1.6vw;
+  font-family: "Shadows Into Light", cursive;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 114%;
+}
+#beneficios2{
+  position: absolute;
+  width: 37%;
+  top: 66%;
+  left: 11%;
+  color: white;
+  font-size: 1.1vw;
+  line-height: 177%;
+  text-align: justify;
+}
+#mao_cima{
+  rotate: 170deg;
+  z-index: 10;
+  position: absolute;
+  top: -13%;
+  left: -2%;
+}
+#mao_baixo{
+  z-index: 10;
+  position: absolute;
+  top: 67%;
+  left: 70%;
+  rotate: 9deg;
+}
+#seta_restinga{
+  top: 13%;
+  left: 14%;
+  width: 71.7%;
+  height: 83%;
+  rotate: 90deg;
+  position: absolute;
+}
+#envoltorio_seta_restinga{
+  border-radius: 100%;
+  top: 48%;
+  left: 94%;
+  width: 3%;
+  height: 6%;
+  position: absolute;
+  z-index: 1000;
+  background: #5c615c75;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+#restinga_planos{
+  position: absolute;
+  background-color: #061249;
+  height: 100vh;
+  top: 102%;
+  width: 100vw;
+  left: 100%;
+  z-index: 100;
+}
+#seta_restinga_planos{
+  top: 5%;
+  left: 14%;
+  width: 71.7%;
+  height: 83%;
+  rotate: -90deg;
+  position: absolute;
+}
+#envoltorio_seta_restinga_planos{
+  border-radius: 100%;
+  top: 48%;
+  left: 94%;
+  width: 3%;
+  height: 6%;
+  position: absolute;
+  z-index: 1000;
+  background: #5c615c75;
+  cursor: pointer;
+}
+#tabela{
+  position: absolute;
+  top: 15%;
+  left: 3%;
+  width: 64%;
+  color: white;
+  background: linear-gradient(360deg, #ffc64e78 -20%, #131111);
+}
+td{
+  padding: 3%;
+  font-size: 1.5vw;
+  width: 39%;
+  text-align: center;
+}
+th{
+  font-size: 2.5vw;
+  padding: 4%;
+}
+#sua_vez{
+  position: absolute;
+  top: 17%;
+  left: 76%;
+  font-size: 3vw;
+  font-family: 'Shadows Into Light';
+  color: white;
+}
+#card_preto{
+  position: absolute;
+  width: 20%;
+  top: 28%;
+  left: 71.5%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+#card_branco{
+  position: absolute;
+  width: 20%;
+  top: 59%;
+  left: 71.5%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+#barrinha{
+  position: absolute;
+  width: 14%;
+  height: 0.1%;
+  background: white;
+  top: 58%;
+  left: 74.5%;
+  transition: 0.7s;
+}
+#preco_1_{
+  position: absolute;
+  top: 53%;
+  left: 76%;
+  color: white;
+  font-size: 1.5vw;
+  opacity: 0;
+  transition: 0.7s;
+}
+#mes_1_{
+  position: absolute;
+  top: 53%;
+  left: 83%;
+  color: white;
+  font-size: 1.2vw;
+  font-weight: normal;
+  opacity: 0;
+  transition: 0.7s;
+}
+#preco_2_{
+  position: absolute;
+  top: 80%;
+  left: 76%;
+  color: white;
+  font-size: 1.5vw;
+  opacity: 0;
+  transition: 0.7s;
+}
+#mes_2_{
+  position: absolute;
+  top: 80%;
+  left: 82.5%;
+  color: white;
+  font-size: 1.2vw;
+  font-weight: normal;
+  opacity: 0;
+  transition: 0.7s;
+}
+#card_preto:hover{
+  position: absolute;
+  width: 22%;
+  top: 28%;
+  left: 70.5%;
+  cursor: pointer;
+}
+#card_preto:hover ~ #barrinha {
+  position: absolute;
+  width: 14%;
+  height: 0.1%;
+  background: white;
+  top: 67%;
+  left: 74.5%;
+  transition: 0.7s;
+}
+#card_preto:hover ~ #card_branco{
+  position: absolute;
+  width: 20%;
+  top: 70%;
+  left: 71.5%;
+  cursor: pointer;
+}
+#card_preto:hover{
+  position: absolute;
+  width: 22%;
+  top: 28%;
+  left: 70.5%;
+  cursor: pointer;
+}
+#card_preto:hover ~ #preco_1_{
+  position: absolute;
+  top: 58%;
+  left: 76%;
+  color: white;
+  font-size: 1.5vw;
+  opacity: 1;
+}
+#card_preto:hover ~ #mes_1_{
+  position: absolute;
+  top: 58.5%;
+  left: 83%;
+  color: white;
+  font-size: 1.2vw;
+  font-weight: normal;
+  opacity: 1;
+  transition: 0.7s;
+}
+#card_branco:hover{
+  position: absolute;
+  width: 22%;
+  top: 59%;
+  left: 70.5%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+#card_branco:hover ~ #preco_2_{
+  position: absolute;
+  top: 89%;
+  left: 76%;
+  color: white;
+  font-size: 1.5vw;
+  opacity: 1;
+}
+#card_branco:hover ~ #mes_2_{
+  position: absolute;
+  top: 89.5%;
+  left: 83%;
+  color: white;
+  font-size: 1.2vw;
+  font-weight: normal;
+  opacity: 1;
+  transition: 0.7s;
+}
